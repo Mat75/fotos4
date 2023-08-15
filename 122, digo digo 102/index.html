@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento de Imagen</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: black;">
+    
+    <div>
+        <center>
+<h1 cass="btn btn-default">RECONICIMIENTO DE IMAGEN</h1>
+<h2>El modelo está entrenado para identificar los siguientes objetos:</h2>
+<label class="Objetos">moneda de cien pesos y cruz</label>
+<hr>
+<label class="Objetos">control</label>
+<hr>
+<label class="Objetos">espinillera</label>
+<hr>
+<label class="Objetos">goku</label>
+<hr>
+<label>Vista de la cámara:</label>
+<div id="camera">
+
+</div>
+<br>
+<br>
+<div id="result">
+
+</div>
+<br>
+<button onclick="take_snapshot()" class="btn btn-info">Capturar imagen</button>
+<br>
+<button onclick="take_snapshot()" class="btn btn-success">Identificar imagen</button>
+<p>Objeto <span id="nombre_objeto"></span></p>
+<p>precision <span id="nombre_precision"></span></p>
+</center>
+    </div>
+
+</body>
+</html>

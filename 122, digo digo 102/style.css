@@ -1,0 +1,14 @@
+
+body{
+    text-align: center;
+    font-size: 23px;
+    background: blue;
+    color: white;
+    
+}
+#camera{
+    border:2px solid blue;
+    width: 350px;
+    height: 350px;
+
+}
